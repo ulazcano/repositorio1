@@ -7,4 +7,20 @@
  
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/wgZ-ATUGXDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <input type="email" id="email" name="email" multiple>
+
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "137946ab-3be2-48f4-acbc-e8e0f45872d7", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "b80d1676-e831-47de-a4e9-0dbf1eb82fa0", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+
 </body>
